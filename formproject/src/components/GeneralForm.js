@@ -8,7 +8,6 @@ const GeneralForm = () => {
        age:"",
        password: '',
        confirmPassword: '',
-
      },
     
    });
