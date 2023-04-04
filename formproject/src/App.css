@@ -1,53 +1,75 @@
 .App {
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #0D0D0D;
 }
-form{
+form {
   width: 500px;
 }
-form label{
+
+form label {
   font-size: 16px;
   font-weight: bold;
 }
-input{
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border: 2px soli#A68F7B;
-    background-color : #9BB5BF;
-    color: black;
-    margin: 5px 0px;
-    outline: none;
-    border-radius: 10px;
+
+.inputDiv {
+  margin-bottom: 10px;
 }
-input::placeholder{
-  color:#A68F7B;
+
+input,
+select {
+  width: 100%;
+  padding: 8px 7px;
+  font-size: 16px;
+  border: 2px solid #4a5568;
+  background-color: #2d3748;
+  color: white;
+  margin: 5px 0px;
+  outline: none;
+  border-radius: 10px;
 }
-input:focus{
-  border-color:#D9C2AD;
+
+input::placeholder {
+  color: lightgray;
 }
-button{
+input:focus {
+  border-color: lightblue;
+}
+
+button {
   width: 100%;
   padding: 8px 8px;
-  margin: 16px 0;
-  border-radius: 8px;
-  background-color :#0D0D0D;
+  margin: 16px 0px;
+  background-color: green;
+  color: white;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 20px;
   border: none;
-  color: white;
 }
-.inputDiv{
-  margin-top: 10px;
+
+.input-error {
+  border-color: #fc8181;
 }
-.input-error{
-  border-color: #D9C2AD;
-}
-.error{color: #D9C2AD;
+
+.error {
+  color: #fc8181;
   font-size: 12px;
   text-align: left;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkbox input {
+  width: auto;
+}
+
+.formLink {
+  color: white;
 }
