@@ -7,6 +7,7 @@ import CustomCheckbox from "./CustomCheckbox";
 import { Link } from "react-router-dom";
 
 const onSubmit = async (values, actions) => {
+  
   await new Promise((resolve) => {
     setTimeout(resolve, 1000);
   });
